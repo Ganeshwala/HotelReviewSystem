@@ -1,5 +1,6 @@
 package com.micro.userService.entites;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Entity;
@@ -22,5 +23,5 @@ public class User {
 	
 	// this feild will not going to store in userService DB
 	@Transient
-	private List<Rating> hotelRating;
+	private List<Rating> hotelRating = new ArrayList<>();
 }
