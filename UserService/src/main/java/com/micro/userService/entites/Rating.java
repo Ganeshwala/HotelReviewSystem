@@ -1,5 +1,6 @@
 package com.micro.userService.entites;
 
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,6 +13,7 @@ import lombok.NoArgsConstructor;
  */
 public class Rating {
 
+	@Id
 	private String ratingId;
 	private String userId;
 	private String hotelId;
